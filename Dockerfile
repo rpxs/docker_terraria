@@ -8,6 +8,7 @@ ENV VERSION=1412
 
 # Temporarily commented out until link is resolved in terraria.org
 # ADD http://terraria.org/server/terraria-server-${VERSION}.zip terraria-server.zip
+# commit
 ADD https://terraria.org/system/dedicated_servers/archives/000/000/042/original/terraria-server-${VERSION}.zip terraria-server.zip
 
 RUN unzip terraria-server.zip "${VERSION}/Linux/*" \
